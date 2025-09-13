@@ -1,0 +1,53 @@
+:root {
+  /* =============================
+     LIGHT THEME
+  ============================= */
+
+  /* --- Primary color: Blue --- */
+  --primary-lightest: #e0f2ff;
+  --primary-light:    #90cdf4;
+  --primary-base:     #3b82f6;
+  --primary-dark:     #1e40af;
+  --primary-darkest:  #1e3a8a;
+
+  /* --- Accent color: Cyclamen / Pinkish Red --- */
+  --accent-lightest: #ffe5f0;
+  --accent-light:    #ffb3d1;
+  --accent-base:     #ff4da6;
+  --accent-dark:     #c70077;
+  --accent-darkest:  #900049;
+
+  /* --- Neutral / Text / Background --- */
+  --bg:        #ffffff;
+  --surface:   #f5f5f5;
+  --border:    #e0e0e0;
+  --text:      #1a1a1a;
+  --text-muted: #555555;
+}
+
+/* =============================
+   DARK THEME
+============================= */
+:root[data-theme="dark"] {
+
+  /* --- Primary color: Blue --- */
+  --primary-lightest: #1e3a8a;
+  --primary-light:    #1e40af;
+  --primary-base:     #3b82f6;
+  --primary-dark:     #60a5fa;
+  --primary-darkest:  #dbeafe;
+
+  /* --- Accent color: Cyclamen / Pinkish Red --- */
+  --accent-lightest: #900049;
+  --accent-light:    #c70077;
+  --accent-base:     #ff4da6;
+  --accent-dark:     #ffb3d1;
+  --accent-darkest:  #ffe5f0;
+
+  /* --- Neutral / Text / Background --- */
+  --bg:        #0f172a;
+  --surface:   #1e293b;
+  --border:    #334155;
+  --text:      #f8fafc;
+  --text-muted: #cbd5e1;
+}

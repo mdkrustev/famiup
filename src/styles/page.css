@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body {margin: 0; 
+    font-family: "Roboto", sans-serif; 
+    font-size: 16px;
+}
+
+:root {
+    --header-height: 50px
+}
+
+button {
+  font-family: "Pathway Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header {
+  height: var(--header-height);
+  width: 100%;
+  background-color: var(--primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px; /* ⬅️ единствен padding за ляво/дясно */
+  box-sizing: border-box; /* ⬅️ гарантира, че padding се брои в ширината */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.logo-title { margin-left: 10px; font-weight: 600; color: var(--primary-darkest); letter-spacing: 4px; font-size: 14px; }
+.logo svg {
+  display: block;
+}
+
+.auth {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--primary-darkest);
+  position: relative;
+  user-select: none;
+}
+.auth svg{ cursor: pointer;}
+.settings-menu {
+    position: absolute;
+    top: calc(var(--header-height) - 5px);
+    background-color: var(--primary-lightest);
+    
+    width: calc(100% - 20px);
+    padding: 10px;
+}
+.settings-menu .menu-row { font-size: 14px; padding: 5px; text-align: right; margin-top: 0px; line-height: 25px; height: 25px; display: flex; justify-content: space-between;}
+.settings-menu .menu-row svg {margin-top: 7px; display: block; margin-right: 5px;}
+.settings-menu .menu-row:hover {
+    background-color: #ffffff80;
+}

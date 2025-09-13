@@ -1,0 +1,24 @@
+.w-1  { width: calc(100% - 100%/1); }
+.w-2  { width: calc(100% - 100%/2); }
+.w-3  { width: calc(100% - 100%/3); }
+.w-4  { width: calc(100% - 100%/4); }
+.w-5  { width: calc(100% - 100%/5); }
+.w-6  { width: calc(100% - 100%/6); }
+.w-7  { width: calc(100% - 100%/7); }
+.w-8  { width: calc(100% - 100%/8); }
+.w-9  { width: calc(100% - 100%/9); }
+.w-10 { width: calc(100% - 100%/10); }
+.w-11 { width: calc(100% - 100%/11); }
+.w-12 { width: calc(100% - 100%/12); }
+
+.btn-s {padding: 5px 10px; font-size: 14px;}
+.btn-m {padding: 15px 20px;  font-size: 14px;}
+.btn-l {padding: 10px 15px;  font-size: 14px;}
+.btn-xl {padding: 20px 25px; font-size: 14px;}
+
+.btn-default {background-color: var(--primary-darkest); color: var(--primary-light); border: 0; border-radius: 3px; cursor: pointer;}
+.btn-link {color: var(--primary-darkest); border: 0; border-radius: 3px; cursor: pointer; background-color: transparent;}
+.btn-default:hover {opacity: .7;}
+.flex {display: flex;}
+.center {justify-content: center;}
+.right {justify-content: end;}
