@@ -5,7 +5,6 @@ import { useUser } from '../contexts/UserContex';
 import { t } from "../utils/i18n";
 import { Link } from 'react-router-dom';
 import { SettingsIcon, LogOutIcon, UserIcon, PaletteIcon } from 'lucide-react';
-import { Switch } from 'antd';
 
 type LayoutProps = {
     children: React.ReactNode;
@@ -17,10 +16,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
     const { user, login, logout } = useUser();
     const [settingsMenuOpen, setSettingsMenuOpen] = useState<boolean>(false)
-
-    const onChange = (checked: boolean) => {
-        console.log(`switch to ${checked}`);
-    };
 
     return (
         <>
