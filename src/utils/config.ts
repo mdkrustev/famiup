@@ -6,19 +6,19 @@ interface IConfig {
 
 const ConfigFunction = () => {
     const config: { [key: string]: IConfig } = {
-        "http://localhost:5173/": {
+        "http://localhost:5173": {
             apiHost: 'http://localhost:8787',
             apiWs: 'ws://localhost:8787'
         },
-        "https://famiup.pages.dev/": {
+        "https://famiup.pages.dev": {
             apiHost: 'https://famiup-api.mdkrustev.workers.dev',
             apiWs: 'wss://famiup-api.mdkrustev.workers.dev'
         }
     }
 
-    console.log(window.location.href)
+    console.log('tessst', window.location.origin)
 
-    const setConfig = config[window.location.href] || {};
+    const setConfig = config[window.location.origin] || {};
 
     console.log(setConfig)
 

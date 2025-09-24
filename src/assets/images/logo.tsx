@@ -1,6 +1,6 @@
 export default function LogoSVG({ size = '100%' }: { size: number | string }) {
     return (
-        <svg version="1.1" id="Layer_1" x="0px" y="0px" width={size} viewBox="0 0 520 520" enable-background="new 0 0 520 520" xmlns="http://www.w3.org/2000/svg">
+        <svg version="1.1" id="Layer_1" x="0px" y="0px" width={size} viewBox="0 0 520 520" enableBackground="new 0 0 520 520" xmlns="http://www.w3.org/2000/svg">
             <defs></defs>
             <path fill="var(--primary-darkest)" opacity="1.000000" stroke="none" d="
 M469.000000,521.000000 

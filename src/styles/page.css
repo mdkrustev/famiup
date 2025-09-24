@@ -5,7 +5,8 @@ body {margin: 0;
 }
 
 :root {
-    --header-height: 50px
+    --header-height: 50px;
+    --sidebar-width: 140px;
 }
 
 button {
@@ -17,7 +18,7 @@ button {
 .header {
   height: var(--header-height);
   width: 100%;
-  background-color: var(--primary-light);
+  background-color: var(--surface);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -57,3 +58,13 @@ button {
 .settings-menu .menu-row:hover {
     background-color: #ffffff80;
 }
+.page {display: flex;}
+.content {
+  width: 100%;
+}
+.content.user {
+  width: calc(100% - var(--sidebar-width));
+}
+.sidebar {width: var(--sidebar-width); background: transparent; height: calc(100vh - var(--header-height)); padding: 20px}
+.sidebar a {transition: .9s; border-radius: 4px; display: flex; margin-bottom: 10px; text-decoration: none; background: var(--primary-lightest); padding: 7px 10px; color: var(--primary-darkest); justify-content: space-between; }
+.sidebar a:hover {background: var(--primary-light);}

@@ -5,6 +5,7 @@ import { useUser } from '../contexts/UserContex';
 import { t } from "../utils/i18n";
 import { Link } from 'react-router-dom';
 import { SettingsIcon, LogOutIcon, UserIcon, PaletteIcon } from 'lucide-react';
+import Sidebar from './Sidebar';
 
 type LayoutProps = {
     children: React.ReactNode;
@@ -19,7 +20,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
     return (
         <>
-
             <div className='header'>
                 <Link to={'/'} className='logo'>
                     <LogoSVG size={25} /> <span className="logo-title">FAMIUP</span>
@@ -34,10 +34,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                                         <UserIcon size={16} /> <button className="btn-s btn-link" onClick={logout}>{t.buttons.Profile}</button>
                                     </div>
                                     <div className="menu-row">
-                                        <PaletteIcon size={16} /> 
-                                        
+                                        <PaletteIcon size={16} />
+
                                         <button className="btn-s btn-link">Dark</button>
-                                      
+
                                     </div>
                                     <div className="menu-row">
                                         <LogOutIcon size={16} /> <button className="btn-s btn-link" onClick={() => { logout(); setSettingsMenuOpen(false) }}>{t.buttons.LogOut}</button>
@@ -48,7 +48,11 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                     {!user && <button className="btn-s btn-default" onClick={login}>{t.buttons.LogIn}</button>}
                 </div>
             </div>
-            {children}
+            <div className="page">
+                {user && <Sidebar />}
+                <div className={`content ${user ? 'user' : ''}`}>{children}</div>
+            </div>
+
         </>
     );
 };
