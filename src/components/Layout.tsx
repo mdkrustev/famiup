@@ -48,9 +48,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                     {!user && <button className="btn-s btn-default" onClick={login}>{t.buttons.LogIn}</button>}
                 </div>
             </div>
-            <div className="page">
-                {user && <Sidebar />}
-                <div className={`content ${user ? 'user' : ''}`}>{children}</div>
+            <div className="page flex">
+                {user && <><Sidebar /> <div className='content user'>{children}</div></>}
+                {!user && <div className='landpage-container'>{children}</div>}
+
             </div>
 
         </>

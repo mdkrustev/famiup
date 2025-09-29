@@ -1,0 +1,41 @@
+.form-container {
+    max-width: 600px;
+}
+
+
+.form-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+}
+
+
+.form-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.form-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-start;
+}
+
+:where(.css-dev-only-do-not-override-1odpy5d).ant-btn-variant-solid {
+    background-color: var(--primary-base);
+}
+
+:where(.css-dev-only-do-not-override-1odpy5d).ant-btn-variant-solid:hover {
+    background-color: var(--primary-dark) !important;
+}
+
+:where(.css-dev-only-do-not-override-1odpy5d).ant-btn-variant-outlined:hover,
+:where(.css-dev-only-do-not-override-1odpy5d).ant-btn-variant-dashed:hover {
+        border-color: var(--primary-base) !important;
+        color: var(--primary-base) !important;
+        background: #ffffff;
+}

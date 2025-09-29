@@ -84,9 +84,10 @@ export function UserProvider({ children }: { children: ReactNode }) {
     setUser(null);
     localStorage.removeItem("user");
     console.log(user)
-    navigate('/')
+
     if (backEndLogOut)
       fetch(Call.urlTo('/auth/logout'), { credentials: 'include' })
+    navigate('/')
   };
 
   useEffect(() => {

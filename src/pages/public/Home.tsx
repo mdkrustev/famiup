@@ -1,7 +1,7 @@
 
-import { t } from "../utils/i18n";
-import "../styles/homePage.css";
-import { useUser } from "../contexts/UserContex";
+import { t } from "../../utils/i18n";
+import "../../styles/homePage.css";
+import { useUser } from "../../contexts/UserContex";
 import { Calendar1Icon, Gamepad2Icon, User2Icon, WorkflowIcon } from "lucide-react";
 
 export default function HomePage() {
@@ -51,7 +51,7 @@ export default function HomePage() {
                         <p>{t.homePage.FeatureMembersDesc}</p>
                     </div>
                     <div className="feature-card">
-                        <h3><Gamepad2Icon size={20}/> {t.homePage.FeatureGamification}</h3>
+                        <h3><Gamepad2Icon size={20} /> {t.homePage.FeatureGamification}</h3>
                         <p>{t.homePage.FeatureGamificationDesc}</p>
                     </div>
                 </div>
