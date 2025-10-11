@@ -45,14 +45,18 @@
 }
 
 .custom-table th {
-    background-color:  var(--primary-base);
-    color: var(--primary-lightest);
+    background-color:  var(--bg);
+    color: var(--primary-base);
     font-weight: 600;
 }
 
+.custom-table tbody tr{
+    background-color: var(--bg);
+}
+
 .custom-table tbody tr:hover {
-    background-color: var(--primary-lightest);
-    color: var(--bg);
+    background-color: var(--accent-lightest);
+    color: var(--text);
     cursor: pointer;
 }
 

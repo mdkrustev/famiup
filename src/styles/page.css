@@ -11,7 +11,7 @@
     --primary-dark:     #007c91;
     --primary-darkest:  #004d54;
 
-    --accent-lightest: #fff3e0;
+    --accent-lightest: #fbf5ec;
     --accent-light:    #ffb74d;
     --accent-base:     #ff9800;
     --accent-dark:     #f57c00;
@@ -22,6 +22,7 @@
     --border:    #e0e0e0;
     --text:      #1a1a1a;
     --text-muted: #555555;
+    --text-input: #ffffff;
 
     --header-height: 60px;
     --sidebar-width: 180px;
@@ -36,7 +37,7 @@
     --primary-dark:     #4dd0e1;
     --primary-darkest:  #e0f7fa;
 
-    --accent-lightest: #e65100;
+    --accent-lightest: #5f3d2a;
     --accent-light:    #f57c00;
     --accent-base:     #ff9800;
     --accent-dark:     #ffb74d;
@@ -47,6 +48,7 @@
     --border:    #334155;
     --text:      #f8fafc;
     --text-muted: #cbd5e1;
+    --text-input: #e0f7fa;
 
     --header-height: 60px;
     --sidebar-width: 180px;
@@ -262,15 +264,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-default {
-    background-color: var(--accent-base);
+    background-color: var(--primary-base);
     color: var(--bg);
     border: 0;
     border-radius: var(--border-radius);
     cursor: pointer;
     transition: background-color var(--transition-speed), opacity var(--transition-speed);
+    color: #fff;
 }
 .btn-default:hover {
-    background-color: var(--accent-dark);
+    background-color: var(--primary-dark);
     opacity: 0.85;
 }
 

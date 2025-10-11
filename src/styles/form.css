@@ -4,7 +4,7 @@
 
 
 .form-card {
-    background: #fff;
+    background: var(--bg);
     border-radius: 12px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 24px;
@@ -38,4 +38,35 @@
         border-color: var(--primary-base) !important;
         color: var(--primary-base) !important;
         background: #ffffff;
+}
+
+:where(.css-dev-only-do-not-override-1odpy5d).ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-selected:not(.ant-picker-cell-disabled) .ant-picker-cell-inner, :where(.css-dev-only-do-not-override-1odpy5d).ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-range-start:not(.ant-picker-cell-disabled) .ant-picker-cell-inner, :where(.css-dev-only-do-not-override-1odpy5d).ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-range-end:not(.ant-picker-cell-disabled) .ant-picker-cell-inner {
+    background-color:  var(--accent-base);
+}
+
+:where(.css-dev-only-do-not-override-1odpy5d) a {
+    color: var(--primary-base);
+}
+
+
+
+:where(.css-dev-only-do-not-override-1odpy5d).ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before  {
+    border-color: var(--accent-light) !important;
+}
+
+:where(.css-dev-only-do-not-override-1odpy5d).ant-picker-dropdown .ant-picker-header {
+    background-color: var(--accent-lightest) !important;
+    color: var(--accent-base) !important;
+}
+
+:where(.css-dev-only-do-not-override-1odpy5d).ant-picker-dropdown .ant-picker-header >button {
+    color: var(--accent-base) !important;
+}
+
+:where(.css-dev-only-do-not-override-1odpy5d).ant-form-item-vertical .ant-form-item-label >label {
+    color: var(--text);
+}
+
+:where(.css-dev-only-do-not-override-1odpy5d).ant-input, .ant-picker-input, .ant-picker {
+    background-color: var(--text-input) !important;
 }

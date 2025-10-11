@@ -1,14 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { t } from "../utils/i18n";
 import { LayoutDashboardIcon, Users2Icon } from "lucide-react";
 
 export default function Sidebar() {
-  let path = window.location.pathname;
+  const location = useLocation();
+  const path = location.pathname;
 
   return (
     <div className="sidebar">
       <Link
-        className={path.startsWith("/dashboard") || path == '/' ? "active" : ""}
+        className={path.startsWith("/dashboard") || path === "/" ? "active" : ""}
         to="/dashboard"
       >
         <LayoutDashboardIcon size={16} />
